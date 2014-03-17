@@ -1,6 +1,6 @@
 {{!< default}}
 
-<main class="page-wrap" role="main">
+<main id="post-page" class="page-wrap" role="main">
     {{! Everything inside the #post tags pulls data from the post }}
     <article class="{{post_class}}">
     {{#post}}
@@ -20,18 +20,8 @@
             </section>
 
             <footer class="post-footer">
-                <section class="author">
-                    {{#if author.image}}
-                    <a href="{{author.website}}" class="post-author-avatar">
-                        <img src="{{author.image}}" alt="{{author.name}}">
-                    </a>
-                    {{/if}}
-
-                    <h3>{{author.name}}</h3>
-                    <p>{{author.bio}}</p>
-                </section>
-
-                <section class="share">
+	    
+	    <section class="share">
                     <h4>Share this post</h4>
                     <a class="icon-twitter" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
                         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -46,6 +36,19 @@
                         <span class="hidden">Google+</span>
                     </a>
                 </section>
+		
+                <section class="author">
+                    {{#if author.image}}
+                    <a href="{{author.website}}" class="post-author-avatar">
+                        <img src="{{author.image}}" alt="{{author.name}}">
+                    </a>
+                    {{/if}}
+
+                    <h3>{{author.name}}</h3>
+                    <p>{{author.bio}}</p>
+                </section>
+
+                
             </footer>
 
             <section itemprop="comment" class="post-comments">
