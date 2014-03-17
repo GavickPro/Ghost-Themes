@@ -17,7 +17,7 @@ html {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 body {
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-color: #f3f3f3;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -72,10 +72,12 @@ blockquote:before {
 	top: -25px;
 	width: 20px;
 }
+iframe {
+	border: none;
+}
 /*---------------------------------
 1.1 Fonts
 ----------------------------------*/
-@charset "UTF-8";
 @font-face {
 	font-family: "ghost-perfetta";
 	src: url("../fonts/perfetta-pixellove/ghost-perfetta.eot");
@@ -271,10 +273,10 @@ footer.page-wrap > div { margin-left: 170px; }
 #social-icons a {
 	color: #363636;
 	display: inline-block;
-	height: 2.4rem;
+	height: 24px;
 	margin: 0 4px;
 	overflow: hidden;
-	width: 2rem;
+	width: 20px;
 }
 #social-icons a:active,
 #social-icons a:focus,
@@ -357,6 +359,10 @@ footer.page-wrap > div { margin-left: 170px; }
 }
 .post > aside > time {
 	background: #da6426;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 	color: #ffffff;
 	display: block;
 	font-size: 1.8rem;
@@ -478,7 +484,10 @@ footer.page-wrap > div { margin-left: 170px; }
 	max-width: 100%;
 }
 .post-footer,
-.post-comments { padding: 0 6.5rem 6.5rem 6.5rem; }
+.post-comments { 
+	overflow: hidden;
+	padding: 0 6.5rem 6.5rem 6.5rem; 
+}
 .author .post-author-avatar {
 	float: left;
 	margin: 2.4rem 4rem 2rem 0;
@@ -518,11 +527,11 @@ footer.page-wrap > div { margin-left: 170px; }
 .share a {
 	display: block;
 	float: left;
-	font-size: 2rem;
-	height: 2.5rem;
+	font-size: 20px;
+	height: 25px;
 	margin: 0 1rem 0 0;
 	overflow: hidden;
-	width: 2rem;
+	width: 20px;
 }
 .share a:hover { color: #363636 }
 .icon-twitter { color: #2aa9e0 }
@@ -536,8 +545,169 @@ footer.page-wrap > div { margin-left: 170px; }
 	body {
 		padding: 0 10px;
 	}
+	body.default-bg {
+		background-image: url('../images/bg-tablet.jpg');
+	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
+	html {
+		font-size: 55%;
+	}
+	.post-header h2 a {
+		padding: 4.5rem 4rem 2rem 4rem;
+	}
+	.post-content,
+	.post-excerpt,
+	.post-footer,
+	.post-comments {
+		padding: 0 4rem 6.5rem 4rem;
+	}
+	#footer-content {
+		padding: 4rem;
+	}
+	#footer-content dl dt {
+		clear: both;
+	}
+	#footer-content .footer-phone, 
+	#footer-content .footer-email {
+		clear: both;
+	}
+	.share {
+		margin: 0rem auto 6rem;
+	}
+	.pagination {
+		padding-left: 0;
+	}
+}
 
+@media (max-width: 700px) {
+	.post {
+		padding-top: 100px;
+	}
+	.post > div {
+		margin: 0 0 6rem 0;
+	}
+	footer.page-wrap > div {
+		margin-left: 0;
+	}
+	.post > aside {
+		padding: 0;
+		width: 100%;
+	}
+	.post > aside > time {
+		float: left;
+		width: 25%;
+	}
+	.post > aside dl {
+		float: right;
+		padding: 1rem 0;
+		width: 70%;
+	}
+	.post > aside dt,
+	.post > aside dd {
+		border: none;
+		display: block;
+		float: left;
+		line-height: 3rem!important;
+		margin: 0 1rem 0 0!important;
+		padding: 0;
+	}
+	.post > aside dd ul {
+		padding: 0!important;
+	}
+	.post > aside dd ul li {
+		line-height: 3rem;
+	}
+	.post > aside .item-tags {
+		border: none;
+		clear: both;
+		font-size: 1.2rem;
+		font-style: italic;
+		line-height: 3rem!important;
+		text-indent: 0;
+		width: auto;
+	}
+	.post > aside:after {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) { 
+	body.default-bg {
+		background-image: url('../images/bg-mobile.jpg');
+	}
+	.blog-title {
+		font-size: 4.2rem;
+		line-height: 8.8rem;
+		padding: 0 2.8rem;
+	}
+	.blog-title:after {
+		height: 8.8rem;
+	}
+	.blog-title:before {
+		height: 8.8rem;
+	}
+	#logo {
+		margin: 5.2rem auto 5.8rem;
+	}
+	#logo:before {
+		top: -30px;
+	}
+	#logo small {
+		top: 20px;
+	}
+	.post {
+		padding-top: 75px;
+	}
+	.post > aside > time {
+		padding: 15px;
+		width: 45%;
+	}
+	.post > aside > dl {
+		padding: 1.6rem 0;
+		width: 50%;
+	}
+	.post > aside .item-tags,
+	.post > aside .item-tags + dd {
+		display: none;
+	}
+	.post-header h2 a {
+		padding: 2.5rem 2rem 2rem 2rem;
+	}
+	.post-content, 
+	.post-excerpt, 
+	.post-footer, 
+	.post-comments {
+		padding: 0 2rem 6.5rem 2rem;
+	}
+	.post-header h2 {
+		font-size: 2.4rem;
+	}
+	.post .post-readmore {
+		margin: 2rem 0 0 0;
+	}
+	#footer-content > div {
+		padding-top: 20px;
+		width: 100%;
+	}
+	#footer-content > div:first-child {
+		padding-top: 0;
+	}
+	.pagination > div > a, .pagination > div > span {
+		font-size: 1.1rem;
+		padding: 12px 8px;
+	}
+	.author .post-author-avatar {
+		margin: 2.4rem 2rem 1rem 0;
+	}
+	.author .post-author-avatar img {
+		max-width: 56px;
+	}
+	.author {
+		font-size: 1.5rem;
+	}
+	pre {
+		padding: 1rem 0 1rem 2rem;
+	}
 }

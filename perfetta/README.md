@@ -36,9 +36,27 @@ The image displayed in the background is a blog cover image which can be defined
 
 If you want to use a responsive version of this image, you should leave blank the cover image under the Ghost settings and replace images in the **assets/images/** directory to your own ones.
 
+### Logo area
+
+The text "Free Ghost Theme" can be changed in the **partials/logo.hbs** file in the following fragment:
+
+```html
+ <small>Free Ghost Theme</small>
+```
+
 ### Footer area
 
 You can modify the content of the page footer in the **partials/footer.hbs** file. It will be displayed in all subpages of your Ghost blog.
+
+## Useful Ghost resources
+
+We recommend these Ghost resources if you need to get a better knowledge about this CMS:
+
+* [Ghost cheatsheet](http://howtoghost.net/ghost-cheatsheet/)
+* [Ghost API overview](http://www.metacotta.com/ghost-api-overview/)
+* [How to make Ghost Themes](http://docs.ghost.org/themes/)
+* [Ghost Themes development links](http://ghost.centminmod.com/ghost-themes/)
+* [Ghost dev bookmarks](https://github.com/ninjaas/ghost-dev-bookmark)
 
 ## Copyright & License
 

@@ -64,7 +64,7 @@
                 <dd>
                     <ul>
                       {{#foreach tags}}
-                        <li itemprop="{{#if @first}}articleSection{{else}}keywords{{/if}}">{{name}}{{#if @last}} {{else}}, {{/if}}</li>
+                        <li>{{name}}{{#if @last}} {{else}}, {{/if}}</li>
                       {{/foreach}}
                     </ul>
                 </dd>
