@@ -36,6 +36,10 @@ The image displayed in the background is a blog cover image which can be defined
 
 If you want to use a responsive version of this image, you should leave blank the cover image under the Ghost settings and replace images in the **assets/images/** directory to your own ones.
 
+### Footer area
+
+You can modify the content of the page footer in the **partials/footer.hbs** file. It will be displayed in all subpages of your Ghost blog.
+
 ## Copyright & License
 
 Copyright (C) 2014 GavickPro - Released under the MIT License.
