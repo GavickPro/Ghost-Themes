@@ -24,9 +24,9 @@ html {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 body {
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-color: #f3f3f3;
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: #777;
 	font: 300 1.6rem/1.6 Raleway, sans-serif;
@@ -476,6 +476,18 @@ footer.page-wrap > div { margin-left: 170px; }
 	position: absolute;
 	width: 60%;
 }
+.post-title span {
+	position: relative;
+}
+.post.featured .post-title span:before {
+	color: #da6426;
+	content: "*";
+	font-family: ghost-perfetta;
+	font-size: 18px;
+	position: relative;
+	right: 0.4rem;
+	top: -1.5rem;
+}
 .post-header p {
 	margin: 0;
 }
@@ -590,7 +602,7 @@ footer.page-wrap > div { margin-left: 170px; }
 
 @media (max-width: 700px) {
 	.post {
-		padding-top: 100px;
+		padding-top: 75px;
 	}
 	.post > div {
 		margin: 0 0 6rem 0;
@@ -665,7 +677,7 @@ footer.page-wrap > div { margin-left: 170px; }
 		top: 20px;
 	}
 	.post {
-		padding-top: 75px;
+		padding-top: 60px;
 	}
 	.post > aside > time {
 		padding: 15px;
