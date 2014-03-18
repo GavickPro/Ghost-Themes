@@ -135,13 +135,6 @@ body.loaded .blog-desc {
 	-ms-transform: translateY(0px);
 	transform: translateY(0px);
 }
-body.loaded .post > aside {
-	opacity: 1;
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	transform: translateX(0px);
-}
 /*---------------------------------
 2.1 Logo
 ----------------------------------*/
@@ -341,18 +334,9 @@ footer.page-wrap > div { margin-left: 170px; }
 .post > aside {
 	background: #34373b;
 	color: #8e9798;
-	opacity: 0;
 	padding: 0 0 10px 0;
 	position: absolute;
 	top: 0;
-	-webkit-transform: translateX(30px);
-	-moz-transform: translateX(30px);
-	-ms-transform: translateX(30px);
-	transform: translateX(30px);
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
 	width: 130px;
 }
 .post > aside:after {
@@ -435,7 +419,10 @@ footer.page-wrap > div { margin-left: 170px; }
 .post-header img:first-child,
 .post-header video:first-child,
 .post-header embed:first-child,
-.post-header iframe:first-child { width: 100%; }
+.post-header iframe:first-child { 
+	background: #333;
+	width: 100%; 
+}
 .post-header h2 {
 	font-size: 3.6rem;
 	margin: 0 0 4.5rem 0;

@@ -14,6 +14,10 @@ In theory you can use different images as a featured image on the posts list and
 
 The videos will be responsive thanks to the fitvids jQuery plugin.
 
+### Animations
+
+Animated blocks on the post list uses the [scrollReveal.js library](http://scrollrevealjs.org/). It is a very simple library for the scroll-based animations. The official documentation for this library is [available here](https://github.com/julianlloyd/scrollReveal.js).
+
 ### Disqus comments
 
 You can specify your Disqus username in the **partials/config.hbs** file at the following line:
