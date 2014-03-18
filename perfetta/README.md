@@ -2,25 +2,25 @@
 
 Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).
 
-## Important informations
+## Important information
 
-This theme contains few features which can need some additional knowledge or settings.
+This theme contains a few features which may require some additional knowledge or settings.
 
 ### Featured images/videos
 
-The image or video placed on the beginning of the post will be used as a featured image/video on the post list. Additionally if you want to display the post over the title on the post page, you have to set the alternative text of the image to **featured-image**.
+The image or video placed at the beginning of the post will be used as a featured image/video on the post list. Additionally if you want to display the post over the title on the post page, you have to set the alternative text of the image to **featured-image**.
 
-In theory you can use different images as a featured image on the posts list and on the post page (in this case you can add the **featured-image** alternative text to the different image).
+In theory you can use different images as a featured image on the posts’ list and on the post page (in this case you can add the **featured-image** alternative text to a different image).
 
 The videos will be responsive thanks to the fitvids jQuery plugin.
 
 ### Animations
 
-Animated blocks on the post list uses the [scrollReveal.js library](http://scrollrevealjs.org/). It is a very simple library for the scroll-based animations. The official documentation for this library is [available here](https://github.com/julianlloyd/scrollReveal.js).
+Animated blocks on the post list uses the [scrollReveal.js library](http://scrollrevealjs.org/). It is a very simple library for scroll-based animations. The official documentation for this library is [available here](https://github.com/julianlloyd/scrollReveal.js).
 
 ### Disqus comments
 
-You can specify your Disqus username in the **partials/config.hbs** file at the following line:
+You can specify your Disqus username in the **partials/config.hbs** file in the following line:
 
 ```js
 var disqus_shortname = '';
@@ -28,7 +28,7 @@ var disqus_shortname = '';
 
 ### Google Analytics support
 
-You can specify your Google Analytics tracking code ID in the **partials/config.hbs** file at the following line:
+You can specify your Google Analytics tracking code ID in the **partials/config.hbs** file in the following line:
 
 ```js
 var ga_ua = 'UA-XXXXX-X';
@@ -38,7 +38,7 @@ var ga_ua = 'UA-XXXXX-X';
 
 The image displayed in the background is a blog cover image which can be defined in the Ghost settings. 
 
-If you want to use a responsive version of this image, you should leave blank the cover image under the Ghost settings and replace images in the **assets/images/** directory to your own ones.
+If you want to use a responsive version of this image, you should leave blank the cover image under the Ghost settings and replace images in the **assets/images/** directory with your own ones.
 
 ### Logo area
 
@@ -50,11 +50,11 @@ The text "Free Ghost Theme" can be changed in the **partials/logo.hbs** file in 
 
 ### Footer area
 
-You can modify the content of the page footer in the **partials/footer.hbs** file. It will be displayed in all subpages of your Ghost blog.
+You can modify the content of the page footer in the **partials/footer.hbs** file. It will be displayed on all subpages of your Ghost blog.
 
 ## Useful Ghost resources
 
-We recommend these Ghost resources if you need to get a better knowledge about this CMS:
+We recommend these Ghost resources if you need to improve your knowledge regarding this CMS:
 
 * [Ghost cheatsheet](http://howtoghost.net/ghost-cheatsheet/)
 * [Ghost API overview](http://www.metacotta.com/ghost-api-overview/)
